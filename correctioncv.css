@@ -241,20 +241,56 @@ h2 {
 }
 
 .range {
-    margin-left: 1vw;
+    margin-left: 2vw;
     width: 80%;
     border: 2px solid var(--blue-color);
     border-radius: 25px;
+    text-align: center;
+
 
 
 }
 
-#quatre-vingt {
+.quatre-vingt {
     background-color: var(--blue-color);
     border-radius: 25px;
     width: 80%;
     text-align: center;
+    animation: animateSkills80 4s;
 }
+
+.quatre-vingt-dix {
+    background-color: var(--blue-color);
+    border-radius: 25px;
+    width: 90%;
+    text-align: center;
+    animation: animateSkills90 4s;
+}
+
+@keyframes animateSkills80 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes animateSkills90 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+
+
+
+
 
 
 @media (max-width:680px) {
