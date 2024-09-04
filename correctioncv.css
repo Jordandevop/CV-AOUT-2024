@@ -270,7 +270,7 @@ h2 {
 .soixante-dix {
     background-color: var(--blue-color);
     border-radius: 25px;
-    width: 90%;
+    width: 70%;
     text-align: center;
     animation: animateSkillsSeventy 4s;
 }
