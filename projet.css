@@ -1,0 +1,47 @@
+:root {
+    --blue-color: #4472c4;
+    --beige-color: #f2f2f2;
+    --black-color: #272d2d;
+
+}
+
+* {
+    margin: 0;
+    /* border: 2px solid black; */
+
+}
+
+
+body {
+    background-image: url(./galaxy.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar>ul>li {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+}
+
+#nav-link>li>a {
+    text-decoration: none;
+    color: var(--beige-color);
+}
+
+#nav-link>li>a:hover {
+    color: var(--blue-color);
+    transition: transform 0.2s;
+}

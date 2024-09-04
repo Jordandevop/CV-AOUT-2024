@@ -1,0 +1,115 @@
+:root {
+    --blue-color: #4472c4;
+    --beige-color: #f2f2f2;
+    --black-color: #272d2d;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./galaxy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--beige-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar>ul>li {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+}
+
+#nav-link>li>a {
+    text-decoration: none;
+    color: var(--beige-color);
+}
+
+#nav-link>li>a:hover {
+    color: var(--blue-color);
+    transition: transform 0.2s;
+}
+
+
+
+#contact {
+    margin-top: 5vh;
+
+}
+
+#contact>p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#formulaire {
+    width: 50%;
+    margin-top: 5vh;
+    margin-left: 25%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+form>input {
+    width: 20vw;
+    margin: 1vh;
+    height: 5vh;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--blue-color);
+    color: var(--beige-color);
+    /* opacity: 0.9; */
+}
+
+form>input:hover {
+    cursor: pointer;
+}
+
+
+#contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 2vw;
+    align-items: start;
+    margin-bottom: 1vh;
+}
+
+i {
+    margin-right: 1vw;
+}
+
+a {
+    color: var(--beige-color);
+    text-decoration: none;
+    margin-bottom: 2vh;
+}

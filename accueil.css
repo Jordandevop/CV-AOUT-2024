@@ -1,0 +1,100 @@
+:root {
+    --blue-color: #4472c4;
+    --beige-color: #f2f2f2;
+    --black-color: #272d2d;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./galaxy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--beige-color);
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar>ul>li {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+}
+
+#nav-link>li>a {
+    text-decoration: none;
+    color: var(--beige-color);
+}
+
+#nav-link>li>a:hover {
+    color: var(--blue-color);
+    transition: transform 0.2s;
+}
+
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#presentation>h1 {
+    margin-bottom: 5%;
+}
+
+button {
+    font-family: "silkscreen", sans-serif;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid var(--blue-color);
+    padding: 10px 25px;
+    margin-bottom: 10%;
+}
+
+button>a {
+    color: var(--beige-color);
+    text-decoration: none;
+
+}
+
+
+
+button:hover {
+    cursor: pointer;
+    color: var(--beige-color);
+    background-color: var(--blue-color);
+    border-color: var(--beige-color);
+}
+
+#profil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+span {
+    color: var(--blue-color);
+}

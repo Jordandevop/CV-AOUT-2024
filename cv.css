@@ -1,0 +1,350 @@
+:root {
+    --blue-color: #4472c4;
+    --beige-color: #f2f2f2;
+    --black-color: #272d2d;
+
+}
+
+* {
+    margin: 0;
+    /* border: 2px solid black; */
+
+}
+
+
+body {
+    background-image: url(./galaxy.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar>ul>li {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+}
+
+#nav-link>li>a {
+    text-decoration: none;
+    color: var(--beige-color);
+}
+
+#nav-link>li>a:hover {
+    color: var(--blue-color);
+    transition: transform 0.2s;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    height: 100%;
+}
+
+#left {
+    width: 30%;
+    height: 200vh;
+    background-color: var(--blue-color);
+    color: var(--beige-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fa-brands {
+    color: var(--beige-color);
+}
+
+#left>.section>a {
+    text-decoration: none;
+    color: var(--beige-color);
+    margin-left: -1.7%;
+
+}
+
+#portrait {
+    margin-top: 2vh;
+    width: 8vw;
+    align-self: center;
+    margin-bottom: 3vh;
+    border-radius: 100%;
+    border: 3px solid var(--beige-color);
+}
+
+.section {
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
+
+
+.left-ul {
+    margin-top: 2vh;
+    margin-left: -9%;
+}
+
+li {
+
+    list-style: none;
+}
+
+.logo {
+    width: 3.5vw;
+
+}
+
+#logo-g {
+    width: 3.5vw;
+    mix-blend-mode: darken;
+}
+
+#logo-js {
+    width: 3vw;
+    margin-left: 1%;
+}
+
+p {
+    margin-top: 3vh;
+    width: 70%;
+}
+
+#right {
+    width: 70%;
+    background-color: var(--white-color);
+    color: var(--black-color);
+
+}
+
+#header-right {
+    height: 15%;
+    background-color: var(--beige-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.top-part {
+    display: flex;
+    justify-content: center;
+}
+
+.top-part>p {
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+}
+
+
+.blue-text {
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+
+
+i {
+    margin-right: 0.5vw;
+    color: var(--blue-color);
+}
+
+#info {
+    margin-top: 1%;
+    margin-left: -3%;
+}
+
+#header-right>#info>li {
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#experience {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#etude {
+    margin-left: 5%;
+}
+
+#fleche {
+    margin: 0;
+    margin-right: 0.5%;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+}
+
+.travail>li {
+    list-style-type: circle;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+.annee {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: start;
+
+}
+
+#autre {
+    margin-left: 5%;
+    margin-top: 1.9%;
+}
+
+
+
+/* --------------------medias queries-------------------------
+ */
+
+
+
+@media (max-width:600px) {
+    body {
+        width: 100%;
+        display: block;
+
+    }
+
+    main {
+        display: block;
+
+    }
+
+    #left {
+        width: 100%;
+        height: auto;
+
+    }
+
+    #left>.section>p {
+
+        margin-left: 20%;
+    }
+
+    #portrait {
+        width: 20vw;
+    }
+
+    #left>.section>a {
+        margin-left: 1%;
+    }
+
+
+
+    .logo {
+        width: 12vw;
+        margin-left: 16%;
+    }
+
+    #logo-g {
+        width: 12vw;
+        margin-left: 16%;
+    }
+
+    #logo-js {
+        width: 10.4vw;
+        margin-left: 17.5%;
+    }
+
+    #left>.section>.left-ul {
+
+        margin-left: 10%;
+    }
+
+    #right {
+        width: auto;
+        height: auto;
+    }
+
+    #header-right {
+        height: 30vh;
+    }
+
+    .top-part>p {
+        font-size: 1.034rem;
+    }
+
+}
+
+@media (min-width :600px) and (max-width :1024px) {
+
+    main {
+        height: 370vh;
+    }
+
+    #left {
+        height: 370vh;
+        display: flex;
+    }
+
+
+    .logo {
+        width: 5vw;
+
+
+    }
+
+
+
+    #logo-g {
+        width: 5vw;
+    }
+
+    #logo-js {
+        width: 4.2vw;
+        margin-left: 1.5%;
+    }
+}
+
+@media (min-width:768px) and (max-width :1024px) {
+
+    #left {
+        height: auto;
+
+    }
+
+    .logo {
+        width: 5vw;
+    }
+
+    #logo-g {
+        width: 5vw;
+    }
+
+    #logo-js {
+        width: 4.2vw;
+        margin-left: 1.5%;
+    }
+
+    #header-right {
+        height: 10%;
+    }
+
+    #right {
+        height: 100%;
+    }
+}
