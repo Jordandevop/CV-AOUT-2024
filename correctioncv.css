@@ -237,7 +237,8 @@ h2 {
 }
 
 .competence>img {
-    width: 8%;
+    width: 8vw;
+    animation: spin 4s infinite;
 }
 
 .range {
@@ -246,9 +247,6 @@ h2 {
     border: 2px solid var(--blue-color);
     border-radius: 25px;
     text-align: center;
-
-
-
 }
 
 .quatre-vingt {
@@ -302,6 +300,12 @@ h2 {
 
     to {
         width: 70%;
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        transform: rotate(360deg);
     }
 }
 
