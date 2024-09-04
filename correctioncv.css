@@ -256,7 +256,7 @@ h2 {
     border-radius: 25px;
     width: 80%;
     text-align: center;
-    animation: animateSkills80 4s;
+    animation: animateSkillsEighty 4s;
 }
 
 .quatre-vingt-dix {
@@ -264,10 +264,18 @@ h2 {
     border-radius: 25px;
     width: 90%;
     text-align: center;
-    animation: animateSkills90 4s;
+    animation: animateSkillsNinety 4s;
 }
 
-@keyframes animateSkills80 {
+.soixante-dix {
+    background-color: var(--blue-color);
+    border-radius: 25px;
+    width: 90%;
+    text-align: center;
+    animation: animateSkillsSeventy 4s;
+}
+
+@keyframes animateSkillsEighty {
     from {
         width: 0;
     }
@@ -277,13 +285,23 @@ h2 {
     }
 }
 
-@keyframes animateSkills90 {
+@keyframes animateSkillsNinety {
     from {
         width: 0;
     }
 
     to {
         width: 90%;
+    }
+}
+
+@keyframes animateSkillsSeventy {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70%;
     }
 }
 
